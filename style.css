@@ -1,3 +1,9 @@
+@media (max-width: 768px) {
+	form {
+	width: 80%;
+	}
+	}
+
 h1, h2 {
 	text-align: center;
 }
@@ -20,7 +26,7 @@ button {
 }
 
 #liste {
-	background-color: rgb(207, 48, 48);
+	background-color: rgba(144,144,144);
 	padding: 10px;
 	text-align: right;
 	cursor: pointer;
