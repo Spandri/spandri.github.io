@@ -1,10 +1,17 @@
 @media (max-width: 768px) {
 	form {
-		width: 80%;
+		width: 100%;
 	}
 	.div1{
 		width: 100%;
+		max-width: 100%;
 		height: auto;
+	}
+	.div2{
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+		top: -50px;
 	}
 }
 h1, h2 {
@@ -76,7 +83,7 @@ img {
 .div1 {
 
     float: left;
-    width: 30%;
+    width: 100%;
     display: block;
     text-align: left;
     
@@ -92,6 +99,6 @@ img {
 
 
 .karusellbilder {
-	width: 300px;
+	width: 100%;
 	height: auto;
 }
