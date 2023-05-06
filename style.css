@@ -1,3 +1,19 @@
+@media (max-width: 768px) {
+	form {
+		width: 100%;
+	}
+	.div1{
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+	}
+	.div2{
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+		top: -50px;
+	}
+}
 h1, h2 {
 	text-align: center;
 }
@@ -19,28 +35,14 @@ button {
 	margin-left: 10px;
 }
 
-#liste {
-	background-color: rgb(207, 48, 48);
+#liste{
+	background-color: rgba(1,144,144);
 	padding: 10px;
 	text-align: right;
 	cursor: pointer;
 }
 
-#tableContainer {
-	display: none;
-	border-collapse: collapse;
-    width: 100%;
-  }
 
-  th, td {
-    border: 1px solid black;
-    padding: 8px;
-    text-align: left;
-  }
-
-  th {
-    background-color: #ddd;
-}
 
 
 .modal {
@@ -81,7 +83,7 @@ img {
 .div1 {
 
     float: left;
-    width: 30%;
+    width: 100%;
     display: block;
     text-align: left;
     
@@ -97,6 +99,6 @@ img {
 
 
 .karusellbilder {
-	width: 300px;
+	width: 100%;
 	height: auto;
 }
