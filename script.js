@@ -1,3 +1,7 @@
+
+
+
+
 let data = []; // Array zur Speicherung der Nutzerdaten
 let passwordModal = document.getElementById("passwordModal");
 let closeButton = document.getElementsByClassName("close")[0];
@@ -43,6 +47,7 @@ function showTable() {
 
   // Passwort-Abfrage anzeigen
   passwordModal.style.display = "block";
+
 }
 
 // Funktion zum Überprüfen des Passworts
@@ -64,13 +69,24 @@ function checkPassword() {
   // Tabelle anzeigen
   let tableContainer = document.getElementById("tableContainer");
   tableContainer.style.display = "block";
+  
 
+    //showdaten();
+    
+  }
+  
+  
   // Load data from localStorage
-  const savedData = JSON.parse(localStorage.getItem('userData'));
+  /*const savedData = JSON.parse(localStorage.getItem('userData'));
+
+
+
+
+
 
   // If there is saved data, fill the table with it
-  if (savedData) {
-    data = savedData;
+  
+    
     let tableBody = document.getElementById("table").getElementsByTagName("tbody")[0];
     for (let i = 0; i < data.length; i++) {
       let row = tableBody.insertRow(i);
@@ -79,14 +95,18 @@ function checkPassword() {
       let gemeinschaftCell = row.insertCell(2);
       let groesseCell = row.insertCell(3);
       let pullovergroesseCell = row.insertCell(4);
-      vornameCell.innerHTML = data[i].vorname;
-      nachnameCell.innerHTML = data[i].nachname;
-      gemeinschaftCell.innerHTML = data[i].gemeinschaft;
+      vornameCell.innerHTML = data[i].vornameID;
+      nachnameCell.innerHTML = data[i].nachnameID;
+      gemeinschaftCell.innerHTML = data[i].gemeinschaftID;
       groesseCell.innerHTML = data[i].groesse;
       pullovergroesseCell.innerHTML = data[i].pullovergroesse;
-    }
-  }
+    } 
+  
 }
+*/
+
+
+
 
 function closePasswordModal() {
   passwordModal.style.display = "none";
@@ -140,3 +160,6 @@ function resetData() {
     alert("Die Tabelle wurde erfolgreich zurückgesetzt.");
   }
 }
+
+
+
