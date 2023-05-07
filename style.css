@@ -1,25 +1,204 @@
-@media (max-width: 768px) {
-	form {
-		width: 1%;
-	}
-	.div1{
-		width: 200%;
-		max-width: 200%;
+
+/* Desktopscreen 992px to ... */
+
+@media screen and (min-width: 992px){
+
+	.mobile {display: none !important;}
+	
+	.no-mobile {display: block !important;}
+	
+	
+	.div1 {
+		max-width: 50%;
 		height: auto;
-	}
-	.div2{
+		float: left;
+		width: auto;
+		display: block;
+		text-align: left;
+	  }
+	  
+	  .div2 {
+		float: right;
+		width: auto; /* neuer Wert */
+		max-width: 50%;
+		height: auto;
+		display: block;
+		text-align: center;
+	  }
+	  
+	  .karusellbilder {
 		width: 100%;
-		max-width: 100%;
-		height: auto;
-		top: -50px;
-	}
-	.karusellbilder {
-		width: 200%;
 		height: auto;
 		margin-bottom: 20px; /* neuer Wert */
 	  }
 	  
-}
+	
+	
+	}
+	
+	
+	/* Small screen / tablet / 760px to 991px */
+	
+	@media (max-width: 991px) {
+	
+	.mobile {display: block !important;}
+	
+	.no-mobile {display: none !important;}
+	.div1 {
+		max-width: 50%;
+		height: auto;
+		float: left;
+		width: 50%;
+		display: block;
+		text-align: left;
+		margin-right: 2%; /* neuer Wert */
+	  }
+	  
+	  .div2 {
+		float: right;
+		width: auto; /* neuer Wert */
+		max-width: 50%;
+		height: auto;
+		display: block;
+		text-align: center;
+		margin-top: -50px;
+	  }
+	  
+	  .karusellbilder {
+		width: 100%;
+		height: auto;
+		margin-bottom: 20px; /* neuer Wert */
+	  }
+
+	
+	}
+	
+	
+	/* Smaller screen / tablet+phone / 480px to 759px */
+	
+	@media (max-width: 759px) {
+	
+	.mobile {display: block !important;}
+	
+	.no-mobile {display: none !important;}
+	.div1 {
+		max-width: 100%;
+		height: auto;
+		float: left;
+		width: 100%;
+		display: block;
+		text-align: left;
+		margin-right: 2%; /* neuer Wert */
+	  }
+	  
+	  .div2 {
+		float: right;
+		width: auto; /* neuer Wert */
+		max-width: 100%;
+		height: auto;
+		display: block;
+		text-align: center;
+	  }
+	  
+	  .karusellbilder {
+		width: 100%;
+		height: auto;
+		margin-bottom: 2px; /* neuer Wert */
+	  }
+
+	
+
+	
+	
+	}
+	
+	
+	/* Extra small screen / smartphone / 280px to 479px */
+	
+	@media (max-width: 479px) {
+	
+		.mobile {display: block !important;}
+
+		.no-mobile {display: none !important;}
+		
+		.div1 {
+			max-width: 100%;
+			height: auto;
+			width: 100%;
+			display: block;
+			margin-top: 10px;
+			margin-left: auto;
+			margin-right: auto;
+		  }
+		  
+		  .div2 {
+			width: auto;
+			max-width: 100%;
+			height: auto;
+			display: block;
+			text-align: center;
+			margin-top: 1px;
+			margin-left: auto;
+			margin-right: 7%;
+			align-items: center;
+			
+		}
+		
+		  
+		  .karusellbilder {
+			width: 100%;
+			height: auto;
+			margin-bottom: 1px; /* neuer Wert */
+		  }
+		  
+
+
+
+	
+	}  
+
+	/* Extra small screen / smartphone / 280px to 479px */
+	
+	@media (max-width: 375px) {
+	
+		.mobile {display: block !important;}
+
+		.no-mobile {display: none !important;}
+		
+		.div1 {
+			max-width: 100%;
+			height: auto;
+			width: 95%;
+			display: block;
+			margin-top: 10px;
+			margin-left: 9px;
+			margin-right: auto;
+			margin-bottom: 5px;
+		  }
+		  
+		  .div2 {
+			width: auto;
+			max-width: 100%;
+			height: auto;
+			display: block;
+			margin-left: 50px;
+			
+		}
+		
+		  
+		  .karusellbilder {
+			width: 100%;
+			height: auto;
+			margin-bottom: 1px; /* neuer Wert */
+		  }
+		  
+
+
+
+	
+	}  
+
+
 
 
 h1, h2 {
@@ -35,6 +214,8 @@ form {
 	gap: 30px;
 
 }
+
+
 
 label {
 	display: block;
@@ -203,29 +384,3 @@ img {
 }
   
 
-
-.div1 {
-	max-width: 50%;
-	height: auto;
-	float: left;
-	width: 50%;
-	display: block;
-	text-align: left;
-	margin-right: 2%; /* neuer Wert */
-  }
-  
-  .div2 {
-	float: right;
-	width: auto; /* neuer Wert */
-	max-width: 50%;
-	height: auto;
-	display: block;
-	text-align: center;
-  }
-  
-  .karusellbilder {
-	width: 100%;
-	height: auto;
-	margin-bottom: 20px; /* neuer Wert */
-  }
-  
