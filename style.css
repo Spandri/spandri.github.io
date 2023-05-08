@@ -9,29 +9,32 @@
 	
 	
 	.div1 {
-		max-width: 50%;
+		max-width: 100%;
 		height: auto;
+		width: 50%;
 		float: left;
-		width: auto;
 		display: block;
-		text-align: left;
+		margin-top: 10px;
+		margin-left: 9px;
+		margin-right: auto;
+		margin-bottom: 5px;
 	  }
 	  
 	  .div2 {
-		float: right;
-		width: auto; /* neuer Wert */
-		max-width: 50%;
+		width: auto;
+		max-width: 100%;
 		height: auto;
 		display: block;
-		text-align: center;
-	  }
+		margin-left: 50px;
+		
+	}
+	
 	  
 	  .karusellbilder {
 		width: 100%;
 		height: auto;
-		margin-bottom: 20px; /* neuer Wert */
+		margin-bottom: 1px; /* neuer Wert */
 	  }
-	  
 	
 	
 	}
@@ -231,8 +234,8 @@ button {
 }
 
 #liste{
-	background-color: rgb(70, 1, 144);
-	color: white;
+	background-color:  
+	color: white; rgba(1,144,144);
 	padding: 10px;
 	text-align: right;
 	cursor: pointer;
@@ -384,3 +387,6 @@ img {
 }
   
 
+
+
+  
