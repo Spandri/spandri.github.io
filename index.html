@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>T-Shirt Bestellung</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
 
@@ -2193,357 +2195,152 @@
 
                                                         <input type="text" id="nachnameID" name="nachname"
                                                             required="required">
-                                                        <span>Surname</span>
+                                                        <span>Last Name</span>
                                                     </div>
-
 
                                                     <div class="select">
-                                                        <!--<label for="Gemeinschaft">Gemeinschaft:</label>-->
-                                                        <select id="gemeinschaftID" name="gemeinschaft">
-                                                            <option selected disabled>Select community</option>
-                                                            <option value="--Please Select--">--Please Select--</option>
-
-                                                            <option value="Itinerant">Itinerant</option>
-
-                                                            <option value="CH Basel - 1. St. Clara">CH Basel - 1. St.
-                                                                Clara
-                                                            </option>
-                                                            <option value="CH Zürich - 2. St. Maurituis/Ad Gentes">CH
-                                                                Zürich
-                                                                - 2. St. Maurituis/Ad Gentes</option>
-
-                                                            <option value="DE Augsburg - 1. St. Elisabeth">DE Augsburg -
-                                                                1.
-                                                                St. Elisabeth</option>
-                                                            <option value="DE Augsburg - 2. St. Elisabeth">DE Augsburg -
-                                                                2.
-                                                                St. Elisabeth</option>
-
-
-
-                                                            <option value="DE Berlin - 1. Bruder Klaus">DE Berlin - 1.
-                                                                Bruder Klaus</option>
-                                                            <option value="DE Berlin - 2. Bruder Klaus">DE Berlin - 2.
-                                                                Bruder Klaus</option>
-                                                            <option value="DE Berlin - 3. Bruder Klaus">DE Berlin - 3.
-                                                                Bruder Klaus</option>
-                                                            <option value="DE Berlin - 4. Bruder Klaus">DE Berlin - 4.
-                                                                Bruder Klaus</option>
-                                                            <option value="DE Berlin - 5. Bruder Klaus">DE Berlin - 5.
-                                                                Bruder Klaus</option>
-                                                            <option value="DE Berlin - 1. St. Joseph">DE Berlin - 1. St.
-                                                                Joseph</option>
-                                                            <option value="DE Berlin - 2. St. Joseph">DE Berlin - 2. St.
-                                                                Joseph</option>
-                                                            <option value="DE Berlin - 3. St. Joseph">DE Berlin - 3. St.
-                                                                Joseph</option>
-                                                            <option value="DE Berlin - Missio ad Gentes">DE Berlin -
-                                                                Missio
-                                                                ad Gentes</option>
-                                                            <option value="DE Berlin - 1. Maria Frieden">DE Berlin - 1.
-                                                                Maria Frieden</option>
-                                                            <option value="DE Berlin - 2. Maria Frieden">DE Berlin - 2.
-                                                                Maria Frieden</option>
-
-                                                            <option value="DE Bonn - 1. Edith Stein">DE Bonn - 1. Edith
-                                                                Stein</option>
-                                                            <option value="DE Bonn - 2. Edith Stein">DE Bonn - 2. Edith
-                                                                Stein</option>
-
-                                                            <option value="DE Chemnitz - 1. St Hilarius">DE Chemnitz -
-                                                                1. St
-                                                                Hilarius</option>
-                                                            <option value="DE Chemnitz - 2. St Hilarius">DE Chemnitz -
-                                                                2. St
-                                                                Hilarius</option>
-                                                            <option value="DE Chemnitz - 3. St Hilarius">DE Chemnitz -
-                                                                3. St
-                                                                Hilarius</option>
-                                                            <option value="DE Chemnitz - 1. St. Loreto">DE Chemnitz - 1.
-                                                                St.
-                                                                Loreto</option>
-                                                            <option value="DE Chemnitz - 2. St. Loreto">DE Chemnitz - 2.
-                                                                St.
-                                                                Loreto</option>
-
-
-
-
-
-                                                            <option value="DE Düsseldorf - 1. St. Joseph">DE Düsseldorf
-                                                                - 1.
-                                                                St. Joseph </option>
-                                                            <option value="DE Düsseldorf - 2. St. Joseph">DE Düsseldorf
-                                                                - 2.
-                                                                St. Joseph</option>
-                                                            <option value="DE Düsseldorf - 1. St. Valentin">DE
-                                                                Düsseldorf -
-                                                                1. St. Valentin</option>
-                                                            <option value="DE Düsseldorf - 2. St. Valentin">DE
-                                                                Düsseldorf -
-                                                                2. St. Valentin</option>
-                                                            <option value="DE Düsseldorf - 3. St. Valentin">DE
-                                                                Düsseldorf -
-                                                                3. St. Valentin</option>
-
-                                                            <option value="DE Hamburg - 2. St. Joseph">DE Hamburg - 2.
-                                                                St.
-                                                                Joseph</option>
-                                                            <option value="DE Hamburg - 3. St. Joseph">DE Hamburg - 3.
-                                                                St.
-                                                                Joseph</option>
-                                                            <option value="DE Hamburg - 4. St. Joseph">DE Hamburg - 4.
-                                                                St.
-                                                                Joseph</option>
-                                                            <option value="DE Hamburg - 2. St. Ansgar">DE Hamburg - 2.
-                                                                St.
-                                                                Ansgar</option>
-                                                            <option value="DE Hamburg - 3. St. Ansgar">DE Hamburg - 3.
-                                                                St.
-                                                                Ansgar</option>
-                                                            <option value="DE Hamburg - 3. St. Theresien">DE Hamburg -
-                                                                3.
-                                                                St. Theresien</option>
-
-                                                            <option value="DE Hannover - 2. St. Godehard">DE Hannover -
-                                                                2.
-                                                                St. Godehard</option>
-                                                            <option value="DE Hannover - 3. St. Godehard">DE Hannover -
-                                                                3.
-                                                                St. Godehard</option>
-
-                                                            <option value="DE Karlsfeld - 1. St. Anna">DE Karlsfeld - 1.
-                                                                St.
-                                                                Anna</option>
-                                                            <option value="DE Karlsfeld - 2. St. Anna">DE Karlsfeld - 2.
-                                                                St.
-                                                                Anna</option>
-                                                            <option value="DE Karlsfeld - 3. St. Anna">DE Karlsfeld - 3.
-                                                                St.
-                                                                Anna</option>
-
-                                                            <option value="DE Köln - 2. St. Marien">DE Köln - 2. St.
-                                                                Marien
-                                                            </option>
-                                                            <option value="DE Köln - 3. St. Marien">DE Köln - 3. St.
-                                                                Marien
-                                                            </option>
-                                                            <option value="DE Köln - 4. St. Marien">DE Köln - 4. St.
-                                                                Marien
-                                                            </option>
-                                                            <option value="DE Köln - St. Thomas">DE Köln - St. Thomas
-                                                            </option>
-
-                                                            <option value="DE Leipzig (Taucha) - 2. St. Anna">DE Leipzig
-                                                                (Taucha) - 2. St. Anna</option>
-                                                            <option value="DE Leipzig (Taucha) - 3. St. Anna">DE Leipzig
-                                                                (Taucha) - 3. St. Anna</option>
-                                                            <option
-                                                                value="DE Leipzig (Taucha) - 2. Heilige Maria Magdalena">
-                                                                DE
-                                                                Leipzig (Taucha) - 2. Heilige Maria Magdalena</option>
-
-
-                                                            <option value="DE Ludwigshafen - 1. Hl. Cecilia">DE
-                                                                Ludwigshafen
-                                                                - 1. Hl. Cecilia</option>
-                                                            <option value="DE Ludwigshafen - 2. Hl. Cecilia">DE
-                                                                Ludwigshafen
-                                                                - 2. Hl. Cecilia</option>
-                                                            <option value="DE Ludwigshafen - 3. Hl. Cecilia">DE
-                                                                Ludwigshafen
-                                                                - 3. Hl. Cecilia</option>
-
-
-
-
-                                                            <option value="DE München - 1. Chirstus Erlöser">DE München
-                                                                - 1.
-                                                                Chirstus Erlöser</option>
-                                                            <option value="DE München - 2. Chirstus Erlöser">DE München
-                                                                - 2.
-                                                                Chirstus Erlöser</option>
-                                                            <option value="DE München - 3. Chirstus Erlöser">DE München
-                                                                - 3.
-                                                                Chirstus Erlöser</option>
-                                                            <option value="DE München - 4. Chirstus Erlöser">DE München
-                                                                - 4.
-                                                                Chirstus Erlöser</option>
-                                                            <option value="DE München - 5. Chirstus Erlöser">DE München
-                                                                - 5.
-                                                                Chirstus Erlöser</option>
-                                                            <option value="DE München - 6. Chirstus Erlöser">DE München
-                                                                - 6.
-                                                                Chirstus Erlöser</option>
-                                                            <option value="DE München - 7. Chirstus Erlöser">DE München
-                                                                - 7.
-                                                                Chirstus Erlöser</option>
-                                                            <option value="DE München - 8. Chirstus Erlöser">DE München
-                                                                - 8.
-                                                                Chirstus Erlöser</option>
-                                                            <option value="DE München - 9. Chirstus Erlöser">DE München
-                                                                - 9.
-                                                                Chirstus Erlöser</option>
-                                                            <option value="DE München - 10. Chirstus Erlöser">DE München
-                                                                -
-                                                                10. Chirstus Erlöser</option>
-                                                            <option value="DE München - 11. Chirstus Erlöser">DE München
-                                                                -
-                                                                11. Chirstus Erlöser</option>
-                                                            <option value="DE München - 12. Chirstus Erlöser">DE München
-                                                                -
-                                                                12. Chirstus Erlöser</option>
-
-                                                            <option value="DE München - 1. St. Margaret">DE München - 1.
-                                                                St.
-                                                                Margaret</option>
-                                                            <option value="DE München - 2. St. Margaret">DE München - 2.
-                                                                St.
-                                                                Margaret</option>
-                                                            <option value="DE München - 3. St. Margaret">DE München - 3.
-                                                                St.
-                                                                Margaret</option>
-                                                            <option value="DE München - 4. St. Margaret">DE München - 4.
-                                                                St.
-                                                                Margaret</option>
-                                                            <option value="DE München - 5. St. Margaret">DE München - 5.
-                                                                St.
-                                                                Margaret</option>
-                                                            <option value="DE München - 6. St. Margaret">DE München - 6.
-                                                                St.
-                                                                Margaret</option>
-
-                                                            <option value="DE München - St. Franziskus/Maria Hilf">DE
-                                                                München - St. Franziskus/Maria Hilf</option>
-
-
-                                                            <option value="DE Nürnberg - 2. St. Michael">DE Nürnberg -
-                                                                2.
-                                                                St. Michael</option>
-
-                                                            <option value="DE Osnabrück - 2. Gemeinschaft">DE Osnabrück
-                                                                - 2.
-                                                                Gemeinschaft</option>
-                                                            <option value="DE Osnabrück - 3. Gemeinschaft">DE Osnabrück
-                                                                - 3.
-                                                                Gemeinschaft</option>
-
-                                                            <option value="DE Primasens - St. Pirmin">DE Primasens - St.
-                                                                Pirmin</option>
-
-                                                            <option value="DE Regensburg - 1. St Wolfgang">DE Regensburg
-                                                                -
-                                                                1. St Wolfgang</option>
-                                                            <option value="DE Regensburg - 2. St Wolfgang">DE Regensburg
-                                                                -
-                                                                2. St Wolfgang</option>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                            <option value="NL Alkmaar - 2. Mariakerk">NL Alkmaar - 2.
-                                                                Mariakerk</option>
-                                                            <option value="NL Alkmaar - 3. Mariakerk">NL Alkmaar - 3.
-                                                                Mariakerk</option>
-
-                                                            <option value="NL Almere - 2. MaG Sint Jan de Doper">NL
-                                                                Almere -
-                                                                2. MaG Sint Jan de Doper</option>
-
-                                                            <option value="NL Den Haag - 1. Sint Agnes">NL Den Haag - 1.
-                                                                Sint Agnes</option>
-                                                            <option value="NL Den Haag - 2. Sint Agnes">NL Den Haag - 2.
-                                                                Sint Agnes</option>
-                                                            <option value="NL Den Haag - 3. Sint Agnes">NL Den Haag - 3.
-                                                                Sint Agnes</option>
-                                                            <option value="NL Den Haag - 4. Sint Agnes">NL Den Haag - 4.
-                                                                Sint Agnes</option>
-                                                            <option value="NL Den Haag - 5. Sint Agnes">NL Den Haag - 5.
-                                                                Sint Agnes</option>
-
-                                                            <option value="NL Eindhoven - Missio Ad Gentes">NL Eindhoven
-                                                                -
-                                                                Missio Ad Gentes</option>
-
-                                                            <option value="NL Geleen - 1. Christus König">NL Geleen - 1.
-                                                                Christus König</option>
-
-                                                            <option
-                                                                value="NL Groningen - 1. Missio Ad Gentes St. Agatha">NL
-                                                                Groningen - 1. Missio Ad Gentes St. Agatha</option>
-                                                            <option
-                                                                value="NL Groningen - 2. Missio Ad Gentes St. Agatha">NL
-                                                                Groningen - 2. Missio Ad Gentes St. Agatha</option>
-
-                                                            <option value="NL Haarlem - 1. Heilige Franciscus">NL
-                                                                Haarlem -
-                                                                1. Heilige Franciscus</option>
-
-                                                            <option value="NL Kerkrade - 1. Missio ad Gentes">NL
-                                                                Kerkrade -
-                                                                1. Missio ad Gentes</option>
-                                                            <option value="NL Kerkrade - 2. Missio ad Gentes">NL
-                                                                Kerkrade -
-                                                                2. Missio ad Gentes</option>
-
-                                                            <option
-                                                                value="NL Maastricht - Onze Lieve vrouwe sterre der Zee">
-                                                                NL
-                                                                Maastricht - Onze Lieve vrouwe sterre der Zee</option>
-                                                            <option value="NL Maastricht - 1. H. Monulfus en Gondulfus">
-                                                                NL
-                                                                Maastricht - 1. H. Monulfus en Gondulfus</option>
-                                                            <option value="NL Maastricht - 1. H. Thomas">NL Maastricht -
-                                                                1.
-                                                                H. Thomas</option>
-                                                            <option value="NL Maastricht - 2. H. Thomas">NL Maastricht -
-                                                                2.
-                                                                H. Thomas</option>
-
-                                                            <option value="NL Roermond - Missio ad Gentes">NL Roermond -
-                                                                Missio ad Gentes</option>
-
-                                                            <option value="NL Schoonhoven - 1. H. Bartolomeus">NL
-                                                                Schoonhoven - 1. H. Bartolomeus</option>
-                                                            <option value="NL Schoonhoven - 2. H. Bartolomeus">NL
-                                                                Schoonhoven - 2. H. Bartolomeus</option>
-
-                                                            <option value="NL Uithoorn - 1. Emmauskerk">NL Uithoorn - 1.
-                                                                Emmauskerk</option>
-                                                            <option value="NL Uithoorn - Missio ad Gentes">NL Uithoorn -
-                                                                Missio ad Gentes</option>
-
-
-
-
-
-
-
-
-
-
+                                                        <select id="country" name="country"
+                                                            onchange="updateChurches()">
+                                                            <option selected disabled>Select Country</option>
+                                                            <option value="Germany">Germany</option>
+                                                            <option value="Netherland">Netherland</option>
+                                                            <option value="Switzerland">Switzerland</option>
                                                             <option value="--other--">--other--</option>
-
-
                                                         </select>
                                                     </div>
+
+                                                    <div class="select">
+                                                        <select id="city" name="city" onchange="updateStreets()"
+                                                            disabled>
+                                                            <option selected disabled>--Please select the country first--
+                                                            </option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="select">
+                                                        <select id="community" name="community" disabled>
+                                                            <option selected disabled>--Please select the country first--
+                                                            </option>
+                                                        </select>
+                                                    </div>
+
+                                                    <script>
+                                                        // Eine Zuordnung der Städte, cityn und Straßen
+                                                        const streets = {
+                                                            Itinerant: ["Itinerant"],
+                                                            Basel: ["1. St. Clara", "--not on the list--"],
+                                                            Zürich: ["2. St. Maurituis/Ad Gentes", "--not on the list--"],
+
+                                                            Augsburg: ["1. St. Elisabeth","2. St. Elisabeth" ,"--not on the list--"],
+                                                            Berlin: ["1. Bruder Klaus","2. Bruder Klaus","3. Bruder Klaus","4. Bruder Klaus","5. Bruder Klaus", "1. St. Joseph","2. St. Joseph", "3. St. Joseph", "1. Maria Frieden", "2. Maria Frieden", "Missio ad Gentes", "--not on the list--"],
+                                                            Bonn: ["1. Edith Stein","2. Edith Stein", "--not on the list--"],
+                                                            Chemnitz: ["1. St Hilarius","2. St Hilarius","3. St Hilarius","1. St. Loreto","2. St. Loreto", "--not on the list--"],
+                                                            Düsseldorf: ["1. St. Joseph", "2. St. Joseph","1. St. Valentin","2. St. Valentin","3. St. Valentin", "--not on the list--"],
+                                                            Hamburg: ["2. St. Joseph","3. St. Joseph","4. St. Joseph","2. St. Ansgar","3. St. Ansgar","3. St. Theresien", "--not on the list--"],
+                                                            Hannover: ["2. St. Godehard","3. St. Godehard", "--not on the list--"],
+                                                   
+                                                            Karlsfeld: ["1. St. Anna","2. St. Anna", "3. St. Anna","--not on the list--"],
+                                                            Köln: ["2. St. Marien","3. St. Marien","4. St. Marien","St. Thomas", "--not on the list--"],
+                                                            "Leipzig (Taucha)": ["2. St. Anna","3. St. Anna","2. Heilige Maria Magdalena", "--not on the list--"],
+                                                            Ludwigshafen: ["1. Hl. Cecilia","2. Hl. Cecilia","3. Hl. Cecilia", "--not on the list--"],
+                                                            "--not on the list--": ["--not on the list--"],
+                                                            München: ["1. Chirstus Erlöser","2. Chirstus Erlöser","3. Chirstus Erlöser","4. Chirstus Erlöser","5. Chirstus Erlöser","6. Chirstus Erlöser","7. Chirstus Erlöser","8. Chirstus Erlöser","9. Chirstus Erlöser","10. Chirstus Erlöser","11. Chirstus Erlöser","12. Chirstus Erlöser",
+                                                            "1. St. Margaret","2. St. Margaret","3. St. Margaret","4. St. Margaret","5. St. Margaret","6. St. Margaret",
+                                                            "St. Franziskus/Maria Hilf", "--not on the list--"],
+                                                            Nürnberg: ["2. St. Michael", "--not on the list--"],
+                                                            Osnabrück: ["2. Gemeinschaft","3. Gemeinschaft", "--not on the list--"],
+                                                            Primasens: ["St. Pirmin", "--not on the list--"],
+                                                            Regensburg: ["2. St. Wolfgang","2. St. Wolfgang", "--not on the list--"],
+
+
+
+
+                                                            Alkmaar: ["2. Mariakerk","3. Mariakerk", "--not on the list--"],
+                                                            Almere: ["2. MaG Sint Jan de Doper", "--not on the list--"],
+                                                            "Den Haag": ["1. Sint Agnes","2. Sint Agnes","3. Sint Agnes","4. Sint Agnes","5. Sint Agnes", "--not on the list--"],
+                                                            Eindhoven: ["Missio Ad Gentes", "--not on the list--"],
+                                                            Geleen: ["1. Christus König", "--not on the list--"],
+                                                            Groningen: ["1. Missio Ad Gentes St. Agatha","2. Missio Ad Gentes St. Agatha", "--not on the list--"],
+                                                            Haarlem: ["1. Heilige Franciscus", "--not on the list--"],
+                                                            Kerkrade: ["1. Missio ad Gentes","2. Missio ad Gentes", "--not on the list--"],
+                                                            Maastricht: ["Onze Lieve vrouwe sterre der Zee","1. H. Monulfus en Gondulfus","1. H. Thomas","2. H. Thomas", "--not on the list--"],
+                                                            Roermond: ["Missio ad Gentes", "--not on the list--"],
+                                                            Schoonhoven: ["1. H. Bartolomeus","2. H. Bartolomeus", "--not on the list--"],
+                                                            Uithoorn: ["1. Emmauskerk","Missio ad Gentes", "--not on the list--"],
+
+                                                        };
+
+                                                        const churches = {
+                                                            Germany: ["Itinerant","Augsburg", "Berlin", "Bonn","Chemnitz","Düsseldorf","Hamburg","Hannover","Karlsfeld","Köln","Leipzig (Taucha)","Ludwigshafen","München","Nürnberg","Osnabrück","Primasens","Regensburg","--not on the list--"],
+                                                            Netherland: ["Itinerant","Alkmaar", "Almere","Den Haag","Eindhoven","Geleen","Groningen","Haarlem","Kerkrade","Maastricht","Roermond","Schoonhoven","Uithoorn","--not on the list--"],
+                                                            Switzerland: ["Itinerant","Basel", "Zürich", "--not on the list--"],
+                                                            "--other--": [ "--not on the list--"],
+                                                        };
+
+                                                        const countrySelect = document.getElementById("country");
+                                                        const citySelect = document.getElementById("city");
+                                                        const communitySelect = document.getElementById("community");
+
+                                                        function updateChurches() {
+                                                            // Entfernen der vorherigen cityn und Straßen
+                                                            citySelect.innerHTML = "<option selected disabled>Select City</option>";
+                                                            communitySelect.innerHTML = "<option selected disabled>--Please select the City first--</option>";
+                                                            citySelect.disabled = false;
+                                                            communitySelect.disabled = true;
+
+                                                            // Überprüfen, ob eine country ausgewählt wurde
+                                                            const selectedcountry = countrySelect.value;
+                                                            if (selectedcountry === "") {
+                                                                // Wenn keine country ausgewählt wurde, dann werden die cityn- und Straßen-Selects leer sein und deaktiviert bleiben
+                                                                return;
+                                                            }
+                                                            // Holen der cityn für die ausgewählte country
+                                                            const selectedChurches = churches[selectedcountry];
+
+                                                            // Hinzufügen der Optionen für die cityn
+                                                            selectedChurches.forEach(church => {
+                                                                const option = document.createElement("option");
+                                                                option.value = church;
+                                                                option.textContent = church;
+                                                                citySelect.appendChild(option);
+                                                            });
+                                                        }
+
+                                                        function updateStreets() {
+                                                            // Entfernen der vorherigen Straßen
+                                                            communitySelect.innerHTML = "<option selected disabled>Select Community</option>";
+                                                            communitySelect.disabled = false;
+
+                                                            // Überprüfen, ob eine city ausgewählt wurde
+                                                            const selectedcity = citySelect.value;
+                                                            if (selectedcity === "") {
+                                                                // Wenn keine city ausgewählt wurde, dann wird die Straßen-Select leer sein und deaktiviert bleiben
+                                                                communitySelect.disabled = true;
+                                                                return;
+                                                            }
+
+                                                            // Holen der Straßen für die ausgewählte city
+                                                            const selectedStreets = streets[selectedcity];
+
+                                                            // Hinzufügen der Optionen für die Straßen
+                                                            selectedStreets.forEach(street => {
+                                                                const option = document.createElement("option");
+                                                                option.value = street;
+                                                                option.textContent = street;
+                                                                communitySelect.appendChild(option);
+                                                            });
+                                                        }
+                                                    </script>
+
+
+
+
 
                                                     <div class="select">
 
 
                                                         <select id="tshirtgroesseID" name="groesse">
-
-                                                            <option selected disabled>Select T-Shirt size</option>
+                                                            <option selected disabled>Select T-shirt size</option>
                                                             <option value="XS">XS</option>
                                                             <option value="S">S</option>
                                                             <option value="M">M</option>
@@ -2577,7 +2374,7 @@
                                                 <br><br>
 
 
-                                        </div>
+                                            </div>
                                         </nav>
                                     </div>
 
@@ -2598,7 +2395,9 @@
                                 <thead>
                                     <td>Vorname</td>
                                     <td>Nachname</td>
-                                    <td>Gemeinschaft</td>
+                                    <td>Country</td>
+                                    <td>City</td>
+                                    <td>Community</td>
                                     <td>T-Shirt Größe</td>
                                     <td>Pullover Größe</td>
                                     </td>
@@ -2629,6 +2428,9 @@
                         </div>
 
 
+                        <!-- Latest compiled and minified JavaScript -->
+                        <script
+                            src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
                         <script src="script.js"></script>
                     </div>
                     <div class="Xpil1b xgQ6eb"></div>
@@ -2812,7 +2614,9 @@
 
         var vornameID = document.querySelector("#vornameID");
         var nachnameID = document.querySelector("#nachnameID");
-        var gemeinschaftID = document.querySelector("#gemeinschaftID");
+        var country = document.querySelector("#country");
+        var city = document.querySelector("#city");
+        var community = document.querySelector("#community");
         var tshirtgroesseID = document.querySelector("#tshirtgroesseID");
         var pullovergroesseID = document.querySelector("#pullovergroesseID");
 
@@ -2831,23 +2635,23 @@
 
         function InsertData() {
 
-            if (vornameID.value.trim() === "" || nachnameID.value.trim() === "" || gemeinschaftID.value.trim() == "Select community" || tshirtgroesseID.value.trim() == "Select T-Shirt size" || pullovergroesseID.value.trim() == "Select Pullover size") {
+            if (vornameID.value.trim() === "" || nachnameID.value.trim() === "" || country.value.trim() == "Select Country" || city.value.trim() == "Select City" || community.value.trim() == "Select Community" || tshirtgroesseID.value.trim() == "Select T-Shirt size" || pullovergroesseID.value.trim() == "Select Pullover size" || community.value.trim() == "--Please select the country first--" || community.value.trim() == "--Please select the city first--"|| city.value.trim() == "--Please select the country first--") {
                 alert("Bitte Vorname, Nachname und Gemeinschaft eingeben. Please enter first name, last name, community, t-shirt size and pullover size");
                 return;
             }
             set(ref(db, "People/" + vornameID.value + " " + nachnameID.value), {
                 Nachname: nachnameID.value,
                 Vorname: vornameID.value,
-                Gemeinschaft: gemeinschaftID.value,
+                Country: country.value,
+                City: city.value,
+                Community: community.value,
                 TshirtGroesse: tshirtgroesseID.value,
                 Pullovergroesse: pullovergroesseID.value
             })
-                .then(() => {
-                    alert("Data added successfully");
-                })
-                .catch((error) => {
-                    alert(error);
-                });
+                
+                    alert("Data has been successfully submitted!\n\nName: " + vornameID.value.trim() + "\nLast Name: " + nachnameID.value.trim() + "\nCountry: " + country.value.trim() + "\nCity: " + city.value.trim() + "\nT-Shirt size: " + tshirtgroesseID.value.trim() + "\nPullover size: " + pullovergroesseID.value.trim() +"\n\n EN: If the input is not correct, please send a short email to wjt23merch@gmail.com with the correct data. \n\n DE: Wenn die Eingabe nicht korrekt ist, sende bitte eine kurze E-Mail an wjt23merch@gmail.com mit den korrekten Daten. \n\n NE: Als de invoer niet correct is, stuur dan alsjeblieft een kort e-mailbericht naar wjt23merch@gmail.com met de juiste gegevens.");
+
+
             form.reset();
         }
 
@@ -2873,12 +2677,15 @@
             update(ref(db, "People/" + vornameID.value), {
                 Nachname: nachnameID.value,
                 Vorname: vornameID.value,
-                Gemeinschaft: gemeinschaftID.value,
+                Country: country.value,
+                City: city.value,
+                Community: community.value,
                 TshirtGroesse: tshirtgroesseID.value,
                 Pullovergroesse: pullovergroesseID.value
             })
                 .then(() => {
-                    alert("Data updated successfully");
+                    alert("Data has been successfully submitted!\n\nName: " + vornameID.value + " " + nachnameID.value + "\nCountry: " + country.value + "\nCity: " + city.value + "\nT-Shirt size: " + tshirtgroesseID.value + "\nPullover size: " + pullovergroesseID.value);
+
                 })
                 .catch((error) => {
                     alert(error);
@@ -2935,12 +2742,16 @@
                             let row = tableBody.insertRow(i);
                             let vornameCell = row.insertCell(0);
                             let nachnameCell = row.insertCell(1);
-                            let gemeinschaftCell = row.insertCell(2);
-                            let groesseCell = row.insertCell(3);
-                            let pullovergroesseCell = row.insertCell(4);
+                            let countryCell = row.insertCell(2);
+                            let cityCell = row.insertCell(3);
+                            let communityCell = row.insertCell(4);
+                            let groesseCell = row.insertCell(5);
+                            let pullovergroesseCell = row.insertCell(6);
                             vornameCell.innerHTML = person.Vorname;
                             nachnameCell.innerHTML = person.Nachname;
-                            gemeinschaftCell.innerHTML = person.Gemeinschaft;
+                            countryCell.innerHTML = person.Country;
+                            cityCell.innerHTML = person.City;
+                            communityCell.innerHTML = person.Community;
                             groesseCell.innerHTML = person.TshirtGroesse;
                             pullovergroesseCell.innerHTML = person.Pullovergroesse;
                             i++;
@@ -2972,7 +2783,7 @@
             const rows = table.querySelectorAll('tbody > tr');
 
             // Add header row
-            const headerRow = worksheet.addRow(['Vorname', 'Nachname', 'Gemeinschaft', 'T-Shirt Größe', 'Pullover Größe']);
+            const headerRow = worksheet.addRow(['Vorname', 'Nachname', 'Country','City','Community' , 'T-Shirt Größe', 'Pullover Größe']);
             headerRow.font = { bold: true };
             headerRow.fill = {
                 type: 'pattern',
