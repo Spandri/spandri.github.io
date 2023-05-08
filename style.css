@@ -234,8 +234,8 @@ button {
 }
 
 #liste{
-	background-color:  
-	color: white; rgba(1,144,144);
+	background-color:  rgba(1,144,144);
+	color: white; 
 	padding: 10px;
 	text-align: right;
 	cursor: pointer;
