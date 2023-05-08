@@ -1,7 +1,5 @@
 
 
-
-
 let data = []; // Array zur Speicherung der Nutzerdaten
 let passwordModal = document.getElementById("passwordModal");
 let closeButton = document.getElementsByClassName("close")[0];
