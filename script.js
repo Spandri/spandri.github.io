@@ -1,3 +1,6 @@
+// Eine Zuordnung der Städte und Pfarreien
+
+
 
 
 let data = []; // Array zur Speicherung der Nutzerdaten
@@ -45,7 +48,7 @@ function showTable() {
 
   // Passwort-Abfrage anzeigen
     let password = prompt("Bitte das Passwort eingeben, um die Tabelle anzuzeigen.");
-    if (password !== "WJT") {
+    if (password !== "LJSEwirsindcool!") {
       alert("Falsches Passwort.");
       return;
     }
@@ -98,7 +101,7 @@ resetButton.addEventListener("click", resetData);
 
 function resetData() {
   let password = prompt("Bitte das Passwort eingeben, um die Tabelle zurückzusetzen.");
-  if (password !== "WJT") {
+  if (password !== "0123478596325") {
     alert("Falsches Passwort.");
     return;
   }
