@@ -35,6 +35,10 @@
 		height: auto;
 		margin-bottom: 1px; /* neuer Wert */
 	  }
+	.info {
+	text-align: center;
+	margin-top: 10px;
+}
 	
 	
 	}
@@ -72,6 +76,10 @@
 		height: auto;
 		margin-bottom: 20px; /* neuer Wert */
 	  }
+		.info {
+	text-align: center;
+	margin-top: 10px;
+}
 
 	
 	}
