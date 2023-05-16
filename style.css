@@ -21,7 +21,7 @@
 	  }
 	  
 	  .div2 {
-		width: 100%;
+		width: auto;
 		max-width: 100%;
 		height: auto;
 		display: block;
@@ -328,7 +328,11 @@ select {
 .select:hover:after {
 	color: rgba(1,144,144);
 
+
+
+	
 }
+
 
 
 .inputBox input:valid ~span,
@@ -387,6 +391,7 @@ img {
 }
   
 
-
-
-  
+.info {
+	text-align: center;
+	margin-top: 10px;
+}
