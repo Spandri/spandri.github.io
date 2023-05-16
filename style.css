@@ -35,10 +35,12 @@
 		height: auto;
 		margin-bottom: 1px; /* neuer Wert */
 	  }
-	.info {
-	text-align: center;
-	margin-top: 10px;
-}
+	  .info {
+		text-align: center;
+		margin-top: 10px;
+		margin-right: 30px;
+		margin-left: 30px;
+	}
 	
 	
 	}
@@ -76,10 +78,12 @@
 		height: auto;
 		margin-bottom: 20px; /* neuer Wert */
 	  }
-		.info {
-	text-align: center;
-	margin-top: 10px;
-}
+	  .info {
+		text-align: center;
+		margin-top: 10px;
+		margin-right: 30px;
+		margin-left: 30px;
+	}
 
 	
 	}
@@ -116,6 +120,12 @@
 		height: auto;
 		margin-bottom: 2px; /* neuer Wert */
 	  }
+	  .info {
+		text-align: center;
+		margin-top: 10px;
+		margin-right: 30px;
+		margin-left: 30px;
+	}
 
 	
 
@@ -161,6 +171,13 @@
 			height: auto;
 			margin-bottom: 1px; /* neuer Wert */
 		  }
+
+		  .info {
+			text-align: center;
+			margin-top: 10px;
+			margin-right: 30px;
+			margin-left: 30px;
+		}
 		  
 
 
@@ -202,6 +219,13 @@
 			height: auto;
 			margin-bottom: 1px; /* neuer Wert */
 		  }
+
+		  .info {
+			text-align: center;
+			margin-top: 10px;
+			margin-right: 30px;
+			margin-left: 30px;
+		}
 		  
 
 
@@ -402,4 +426,6 @@ img {
 .info {
 	text-align: center;
 	margin-top: 10px;
+	margin-right: 30px;
+	margin-left: 30px;
 }
