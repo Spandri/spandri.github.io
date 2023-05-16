@@ -2082,7 +2082,8 @@
                                 </div>
                             </section>
                             <div class="info">
-                                <span>For questions, please write an email to <a href="mailto:wjt23merch@gmail.com">wjt23merch@gmail.com</a></span> 
+                                <span>The caps are not visible in the pictures, but it can be said that the small cap fits most women, and the large cap fits most men. For a smaller head, it is best to choose small, and for a larger head, choose large.
+                                    For questions, please write an email to <a href="mailto:wjt23merch@gmail.com">wjt23merch@gmail.com</a></span> 
                             </div>
                             
 
@@ -2421,6 +2422,7 @@
                                     <td>T-Shirt Größe</td>
                                     <td>Pullover Größe</td>
                                     <td>Cap Größe</td>
+                                    <td>Timestamp</td>
                                     </td>
                                 </thead>
                                 <tbody>
@@ -2655,7 +2657,13 @@
         var findBtn = document.querySelector("#find");
         //var downloadBtn = document.querySelector("#download");
 
+        const timestampElement = document.getElementById("timestamp");
 
+// Aktuelles Datum und Uhrzeit abrufen
+const now = new Date();
+
+// Zeitstempel formatieren
+const timestamp = now.toLocaleString();
 
         function InsertData() {
             event.preventDefault(); // Verhindert das Standardverhalten des Formulars (Neuladen der Seite)
@@ -2673,9 +2681,10 @@
                         const oldcommunity = olddata.Community;
                         const oldPullover = olddata.Pullovergroesse;
                         const oldtshirt = olddata.TshirtGroesse;
+                        const oldtimestamp = olddata.Timestamp;
 
                         const oldcap = olddata.Cap
-                        const result = confirm("Data has already been submitted under this name!\n\nName: " + oldvorname + "\nLast Name: " + oldnachname + "\nCountry: " + oldcountry + "\nCity: " + oldcity + "\nT-Shirt size: " + oldtshirt + "\nPullover size: " + oldPullover  + "\nCap size: " + oldcap + "\n\nDo you want to refresh the data as specified?");
+                        const result = confirm("The data was already entered as follows on "+oldtimestamp +":\n\nName: " + oldvorname + "\nLast Name: " + oldnachname + "\nCountry: " + oldcountry + "\nCity: " + oldcity + "\nT-Shirt size: " + oldtshirt + "\nPullover size: " + oldPullover  + "\nCap size: " + oldcap + "\n\nDo you want to refresh the data as specified?");
             
             if (result) {
                 savedata();
@@ -2704,6 +2713,9 @@
 
 
                         else {
+                            
+
+                            
                             set(ref(db, "People/" + vornameID.value + " " + nachnameID.value), {
                                 Nachname: nachnameID.value,
                                 Vorname: vornameID.value,
@@ -2713,6 +2725,7 @@
                                 TshirtGroesse: tshirtgroesseID.value,
                                 Pullovergroesse: pullovergroesseID.value,
                                 Cap: capID.value,
+                                Timestamp: timestamp,
                             })
                             alert("Data has been successfully submitted!\n\nName: " + vornameID.value.trim() + "\nLast Name: " + nachnameID.value.trim() + "\nCountry: " + country.value.trim() + "\nCity: " + city.value.trim() + "\nT-Shirt size: " + tshirtgroesseID.value.trim() + "\nPullover size: " + pullovergroesseID.value.trim() + "\nCap size: " + capID.value.trim()  +"\n\n EN: If the input is not correct, please send a short email to wjt23merch@gmail.com with the correct data. \n\n DE: Wenn die Eingabe nicht korrekt ist, sende bitte eine kurze E-Mail an wjt23merch@gmail.com mit den korrekten Daten. \n\n NE: Als de invoer niet correct is, stuur dan alsjeblieft een kort e-mailbericht naar wjt23merch@gmail.com met de juiste gegevens.");
 
@@ -2827,6 +2840,9 @@
 
                             let capCell = row.insertCell(7);
 
+
+                            let timestampCell = row.insertCell(8);
+
                             vornameCell.innerHTML = person.Vorname;
                             nachnameCell.innerHTML = person.Nachname;
                             countryCell.innerHTML = person.Country;
@@ -2834,7 +2850,8 @@
                             communityCell.innerHTML = person.Community;
                             groesseCell.innerHTML = person.TshirtGroesse;
                             pullovergroesseCell.innerHTML = person.Pullovergroesse;
-                            capCell.innerHTML = person.Cap
+                            capCell.innerHTML = person.Cap;
+                            timestampCell.innerHTML = person.Timestamp;
                             i++;
 
                         });
@@ -2864,7 +2881,7 @@
             const rows = table.querySelectorAll('tbody > tr');
 
             // Add header row
-            const headerRow = worksheet.addRow(['Vorname', 'Nachname', 'Country', 'City', 'Community', 'T-Shirt Größe', 'Pullover Größe', 'Cap']);
+            const headerRow = worksheet.addRow(['Vorname', 'Nachname', 'Country', 'City', 'Community', 'T-Shirt Größe', 'Pullover Größe', 'Cap', 'Timestamp']);
             headerRow.font = { bold: true };
             headerRow.fill = {
                 type: 'pattern',
