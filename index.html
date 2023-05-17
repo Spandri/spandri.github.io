@@ -2847,27 +2847,7 @@ function getCurrentTimestamp() {
             }
             const realreset= confirm("Möchten Sie wirklich alle Daten löschen und die Tabelle zurücksetzen?");
             if (realreset) {
-                // Daten aus localStorage löschen
-                localStorage.removeItem('userData');
-
-                // Tabelle leeren
-                let tableBody = document.getElementById("table").getElementsByTagName("tbody")[0];
-                tableBody.innerHTML = "";
-
-                // Daten-Array leeren
-                data = [];
-
-                // Erfolgsmeldung anzeigen
-                alert("Die Tabelle wurde erfolgreich zurückgesetzt.");
-
-
-                remove(ref(db, "People/" + vornameID.value))
-                .then(() => {
-                    alert("Data deleted successfully");
-                })
-                .catch((error) => {
-                    alert(error);
-                });
+                alert("Tja, darfst du aber nicht, dumm gelaufen.");
             
 
 
