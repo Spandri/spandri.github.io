@@ -2714,10 +2714,14 @@
 const now = new Date();
 
 // Zeitstempel formatieren
-const timestamp = now.toLocaleString();
+function getCurrentTimestamp() {
+  return new Date().toLocaleString();
+}
+
 
         function InsertData() {
             event.preventDefault(); // Verhindert das Standardverhalten des Formulars (Neuladen der Seite)
+            const timestamp = getCurrentTimestamp();
 
             const dbRef = ref(getDatabase());
             get(child(dbRef, `People/` + vornameID.value + " " + nachnameID.value))
@@ -2779,7 +2783,7 @@ const timestamp = now.toLocaleString();
                                 Cap: capID.value,
                                 Timestamp: timestamp,
                             })
-                            alert("Data has been successfully submitted!\n\nName: " + vornameID.value.trim() + "\nLast Name: " + nachnameID.value.trim() + "\nCountry: " + country.value.trim() + "\nCity: " + city.value.trim() + "\nT-Shirt size: " + tshirtgroesseID.value.trim() + "\nPullover size: " + pullovergroesseID.value.trim() + "\nCap size: " + capID.value.trim()  +"\n\n EN: If the input is not correct, just enter your data again and refresh them. \n\n DE: Wenn die Eingabe nicht korrekt ist, gib deine Daten nochmal ein und aktualisiere sie. \n\n NE: Als de invoer niet correct is, voert u ze gewoon opnieuw in en vernieuwt u ze.");
+                            alert("Data has been successfully submitted!\n\nName: " + vornameID.value.trim() + "\nLast Name: " + nachnameID.value.trim() + "\nCountry: " + country.value.trim() + "\nCity: " + city.value.trim() + "\nT-Shirt size: " + tshirtgroesseID.value.trim() + "\nPullover size: " + pullovergroesseID.value.trim() + "\nCap size: " + capID.value.trim()  +"\n\n EN: If the input is not correct, just enter your data again and refresh them. \n\n DE: Wenn die Eingabe nicht korrekt ist, gib deine Daten nochmal ein und aktualisiere diese. \n\n NE: Als de invoer niet correct is, voert u ze gewoon opnieuw in en vernieuwt u ze.");
 
 
                             form.reset();
